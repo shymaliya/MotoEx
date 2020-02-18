@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" href="js/navbar.js">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="header-section">
+            <a href="#"><img class="header-logo" src="img/logo.png" alt="logo"></a>
+            <input type="text" placeholder="Я шукаю ..." class="header__input">
+        </div>
+        <div class="header-icons">
+            <button class="header__basket">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="28" viewBox="0 0 32 28">
+                    <path fill="#C8C8C8" fill-rule="evenodd" d="M11.656 9.02v.03c0 1.863 1.427 3.374 3.188 3.374 1.76 0 3.188-1.511 3.188-3.375V9.02h12.36c.888 0 1.608.756 1.608 1.688 0 .931-.72 1.687-1.608 1.687l-.996-.001-5.972 14.624H8.417L2.443 12.394h-.835C.72 12.395 0 11.64 0 10.709 0 9.776.72 9.02 1.608 9.02l10.048-.001zm-.686 5.592h-.44a.998.998 0 0 0-.998.998v7.034c0 .552.446.999.998.999h.44a.998.998 0 0 0 .999-.999V15.61a.998.998 0 0 0-.999-.998zm5.22 0h-.473a.998.998 0 0 0-.998.998v7.034c0 .552.446.999.998.999h.472a1 1 0 0 0 1-.999V15.61a.999.999 0 0 0-1-.998zm5.155 0h-.472a.999.999 0 0 0-.999.998v7.034c0 .552.448.999.999.999h.472a1 1 0 0 0 1-.999V15.61a.999.999 0 0 0-1-.998zM19.528.206c.66.423.886 1.36.505 2.094l-3.675 7.08c-.38.733-1.223.984-1.882.561-.66-.423-.886-1.361-.506-2.094l3.676-7.08c.381-.734 1.223-.985 1.882-.561z"/>
+                </svg>
+            </button>
+            <button class="header__login">Вхід</button>
+            <button id="registration" class="header__registration">Реєстрація</button>
+        </div>
+        <div id="registrationModal" class="modal">
+            <div class="registrationModal-content">
+                <!-- <span class="close">&times;</span> -->
+                <h2 class="registrationModal-content__title">Sign Up</h2>
+                <form action="" class="registrationModal-form">
+                    <div class="registrationModal-text">
+                        <label for=".registrationModal__input" class="registrationModal__name">Ім'я</label>
+                        <p class="registrationModal__star">*</p>
+                    </div>
+                    <input type="text" class="registrationModal__input">
+                    <div class="registrationModal-text">
+                        <label for=".registrationModal__input" class="registrationModal__name">Ім'я</label>
+                        <p class="registrationModal__star">*</p>
+                    </div>
+                    <input type="text" class="registrationModal__input">
+                    <div class="registrationModal-text">
+                        <label for=".registrationModal__input" class="registrationModal__name">Ім'я</label>
+                        <p class="registrationModal__star">*</p>
+                    </div>
+                    <input type="text" class="registrationModal__input">
+                    <div class="registrationModal-text">
+                        <label for=".registrationModal__input" class="registrationModal__name">Ім'я</label>
+                        <p class="registrationModal__star">*</p>
+                    </div>
+                    <input type="text" class="registrationModal__input">
+                    <button class="agree-btn"></button>
+                    <p class="agree-text">I agree to</p>
+                    <button class="registrationModal-content-btn">Sign Up</button>
+                    <span class="registrationModal-content__acc">Have account?</span>
+                    <a href="" class="registrationModal-content__signIn"></a>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+ 
+
+<section class="nav">
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-links">
+                <a href="#" class="navbar-links-items">
+                    <h3 class="navbar-links__items">Сільськогосподарська техніка</h3>
+                </a>
+                <div class="navbar-links-menu">
+                    <div class="navbar-links-menu__agricultural">
+                        <div class="navbar-links-menu-header">
+                            <h3 class="navbar-links-menu__title">Сільськогосподарська техніка</h3>
+                            <span class="navbar-links-menu__span">232 товари</span>
+                            <p>Текст 1</p>
+                            <p>Текст 2</p>
+                            <p>Текст 3</p>
+                            <p>Текст 4</p>
+                            <p>Текст 5</p>
+                        </div>
+                        <div class="navbar-links-menu-line"></div>
+                    </div>
+                </div>
+                <a href="#" class="navbar-links-items">
+                    <h3 class="navbar-links__items">Мототехніка</h3>
+                </a>
+                <div class="navbar-links-menu">
+                    <div class="navbar-links-menu__agricultural">
+                        <div class="navbar-links-menu-header">
+                            <h3 class="navbar-links-menu__title">Сільськогосподарська техніка</h3>
+                            <span class="navbar-links-menu__span">232 товари</span>
+                            <p>Текст 1</p>
+                            <p>Текст 2</p>
+                            <p>Текст 3</p>
+                            <p>Текст 4</p>
+                            <p>Текст 5</p>
+                        </div>
+                        <div class="navbar-links-menu-line"></div>
+                    </div>
+                </div>
+                <a href="#" class="navbar-links-items">
+                    <h3 class="navbar-links__items">Велосипеди</h3>
+                </a>
+                <div class="navbar-links-menu">
+                    <div class="navbar-links-menu__agricultural">
+                        <div class="navbar-links-menu-header">
+                            <h3 class="navbar-links-menu__title">Сільськогосподарська техніка</h3>
+                            <span class="navbar-links-menu__span">232 товари</span>
+                            <p>Текст 1</p>
+                            <p>Текст 2</p>
+                            <p>Текст 3</p>
+                            <p>Текст 4</p>
+                            <p>Текст 5</p>
+                        </div>
+                        <div class="navbar-links-menu-line"></div>
+                    </div>
+                </div>
+                <a href="#" class="navbar-links-items">
+                    <h3 class="navbar-links__items">Додаткове обладнання</h3>
+                </a>
+                <div class="navbar-links-menu">
+                    <div class="navbar-links-menu__agricultural">
+                        <div class="navbar-links-menu-header">
+                            <h3 class="navbar-links-menu__title">Сільськогосподарська техніка</h3>
+                            <span class="navbar-links-menu__span">232 товари</span>
+                            <p>Текст 1</p>
+                            <p>Текст 2</p>
+                            <p>Текст 3</p>
+                            <p>Текст 4</p>
+                            <p>Текст 5</p>
+                        </div>
+                        <div class="navbar-links-menu-line"></div>
+                    </div>
+                </div>
+                <a href="#" class="navbar-links-items">
+                    <h3 class="navbar-links__items">Послуги</h3>
+                </a>
+                <a href="#" class="navbar-links-items">
+                    <h3 class="navbar-links__items">Про нас</h3>
+                </a>
+                <a href="#" class="navbar-links-items">
+                    <h3 class="navbar-links__items">Контакти</h3>
+                </a>
+                <a href="#" class="navbar-links-items">
+                    <h3 class="navbar-links__items">Поради</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+<main>
+    <section class="main-slider">
+        <div class="main-slider-window">
+            <div class="main-slider-box">
+               <div class="main-slider-page">
+                    <div class="main-slider-text">
+                        <div class="main-slider-page-content">
+                            <h2 class="main-slider__title">Lorem ipsum <br> dolor sit amet</h2>
+                            <p class="main-slider__subtitle" align="justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, corporis ducimus! Explicabo deserunt nisi reprehenderit cum, animi incidunt iure reiciendis enim, hic nemo dolore porro odit ab officiis, vitae alias!</p>
+                            <button class="main-slider__btn">Деталі</button>
+                        </div> 
+                    </div>
+                    <div class="main-slider-page-content">
+                        <div class="main-slider-page-video">
+                            <video src="video/truk.mp4" autoplay loop muted></video>
+                        </div>
+                    </div>
+               </div>           
+            </div>
+            <div class="main-slider-box">
+                <div class="main-slider-page">
+                    <div class="main-slider-text">
+                        <div class="main-slider-page-content">
+                            <h2 class="main-slider__title">Lorem ipsum <br> dolor sit amet</h2>
+                            <p class="main-slider__subtitle" align="justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, corporis ducimus! Explicabo deserunt nisi reprehenderit cum, animi incidunt iure reiciendis enim, hic nemo dolore porro odit ab officiis, vitae alias!</p>
+                            <button class="main-slider__btn">Деталі</button>
+                        </div> 
+                    </div>
+                     <div class="main-slider-page-content">
+                         <div class="main-slider-page-video">
+                             <video src="video/truk.mp4" autoplay loop muted></video>
+                         </div>
+                     </div>
+                </div>           
+             </div>
+             <div class="main-slider-box">
+                <div class="main-slider-page">
+                    <div class="main-slider-text">
+                        <div class="main-slider-page-content">
+                            <h2 class="main-slider__title">Lorem ipsum <br> dolor sit amet</h2>
+                            <p class="main-slider__subtitle" align="justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, corporis ducimus! Explicabo deserunt nisi reprehenderit cum, animi incidunt iure reiciendis enim, hic nemo dolore porro odit ab officiis, vitae alias!</p>
+                            <button class="main-slider__btn">Деталі</button>
+                        </div> 
+                    </div>
+                     <div class="main-slider-page-content">
+                         <div class="main-slider-page-video">
+                             <video src="video/truk.mp4" autoplay loop muted></video>
+                         </div>
+                     </div>
+                </div>           
+             </div>
+        </div>
+    </section>
+    
+    <section class="brands">
+        <div class="container">
+            <div class="barnds-content">
+                <h2 class="brands-content-logo">Our brands</h2>
+                <img src="img/brands/kubota-logo.png" alt="kubota" class="brands-content-img">
+                <img src="img/brands/kverneland-group.png" alt="kverneland-group" class="brands-content-img">
+                <img src="img/brands/vicon-2-logo.png" alt="vicon" class="brands-content-img">
+                <img src="img/brands/kverneland-logo.png" alt="kverneland-logo" class="brands-content-img">
+            </div>
+        </div>
+    </section>
+    
+    <section class="selling">
+        <div class="container">
+            <h2 class="selling-title">Топ продаж</h2>
+            <div class="selling-cards">
+                <div class="selling-cards__card">
+                    <img src="img/sellings/14905.png" alt="traktor" class="selling-cards__card-img">
+                    <span class="selling-cards__card-type">Farm</span>
+                    <p class="selling-cards__card-name">Magnum 380 Prestige Tractor</p>
+                    <p class="selling-cards__card-price">$125,000</p>
+                    <button class="selling-cards__card-btn">Купити в кредит</button>
+                </div>
+                <div class="selling-cards__card">
+                    <img src="img/sellings/14905.png" alt="traktor" class="selling-cards__card-img">
+                    <span class="selling-cards__card-type">Farm</span>
+                    <p class="selling-cards__card-name">Magnum 380 Prestige Tractor</p>
+                    <p class="selling-cards__card-price">$10,399.99</p>
+                    <button class="selling-cards__card-btn">Купити в кредит</button>
+                </div>
+                <div class="selling-cards__card">
+                    <img src="img/sellings/14905.png" alt="traktor" class="selling-cards__card-img">
+                    <span class="selling-cards__card-type">Farm</span>
+                    <p class="selling-cards__card-name">Magnum 380 Prestige Tractor</p>
+                    <p class="selling-cards__card-price">$354,750</p>
+                    <button class="selling-cards__card-btn">Купити в кредит</button>
+                </div>
+            </div>
+            <button class="selling__more">Дивитись більше ></button>
+        </div>
+    </section>
+    
+    <section class="services">
+        <div class="container">
+            <h2 class="services-title">Послуги</h2>
+            <div class="services-images">
+                <img src="img/services/westgate-copy-2.png" alt="service" class="services-images__img">
+                <img src="img/services/surf-copy-2.png" alt="guarantee" class="services-images__img">
+                <img src="img/services/group-8.png" alt="delivery" class="services-images__img">
+                <img src="img/services/group-7.png" alt="credit" class="services-images__img">
+            </div>
+            <div class="services-names">
+                <p>Сервіс</p>
+                <p>Гарантія</p>
+                <p>Доставка</p>
+                <p>Кредит</p>
+            </div>
+            <div class="services-description">
+                <p>Lorem ipsum dolor, sit amet consectetur <br> adipisicing elit. Vel quo debitis, tempore <br> amet facere omnis ...</p>
+                <p>Lorem ipsum dolor, sit amet consectetur <br> adipisicing elit. Vel quo debitis, tempore <br> amet facere omnis ...</p>
+                <p>Lorem ipsum dolor, sit amet consectetur <br> adipisicing elit. Vel quo debitis, tempore <br> amet facere omnis ...</p>
+                <p>Lorem ipsum dolor, sit amet consectetur <br> adipisicing elit. Vel quo debitis, tempore <br> amet facere omnis ...</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="advice">
+        <div class="container">
+            <h2 class="advice-title">Поради</h2>
+            <div class="advice-images">
+                <div class="advice-little-img">
+                    <img src="img/advice/mask.png" alt="attendance" class="advice-little-img__attendance">
+                    <div class="advice__opacity-attendance">
+                        <h3 class="advice__opacity-attendance-title">Обслуговування</h3>
+                        <p class="advice__opacity-attendance-subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In ratione alias deleniti quasi distinctio enim ex? Cumque aspernatur non voluptatem quidem sequi fugiat perspiciatis?</p>
+                    </div>                
+                    <img src="img/advice/quest.png" alt="questions" class="advice-little-img__questions">
+                    <div class="advice__opacity-questions">
+                        <h3 class="advice__opacity-questions-title">Часті питання</h3>
+                        <p class="advice__opacity-questions-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate consectetur doloremque dicta rem porro reiciendis...</p>
+                    </div>
+                </div>
+                <div class="advice-big-img">
+                    <img src="img/advice/farm.png" alt="farm" class="advice-big-img__farm">
+                    <div class="advice__opacity-farm">
+                        <h3 class="advice__opacity-farm-title">Фермеру</h3>
+                        <p class="advice__opacity-farm-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate <br> consectetur doloremque dicta rem porro reiciendis...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contacts">
+        <div class="container">
+            <h2 class="contacts-title">Зв'яжіться з нами</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2589.7515263112514!2d25.60608431569806!3d49.52696647935859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473034225b3829b5%3A0xec70739a36a8c6c9!2sBrv%20Ukraine!5e0!3m2!1sru!2sua!4v1581097354960!5m2!1sru!2sua" width="560" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <form action="#" class="contacts-form">
+                <label class="contacts__name" for=".contacts__input">Ім'я</label>
+                <p class="contacts__star">*</p>
+                <input type="text" class="contacts__input">
+                <label class="contacts__name" for=".contacts__input">Телефон</label>
+                <p class="contacts__star">*</p>
+                <input type="text" class="contacts__input">
+                <label class="contacts__name" for=".contacts__input">E-mail</label>
+                <p class="contacts__star">*</p>
+                <input type="text" class="contacts__input">
+                <label class="contacts__name" for=".contacts__input">Повідомлення</label>
+                <p class="contacts__star">*</p>
+                <input type="text" class="contacts__input contacts__input-message">
+                <button class="contacts__btn">Надіслати</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<section class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-contacts">
+                <img src="img/logo.png" alt="logo" class="footer-contacts__logo">
+                <p class="footer-contacts__mail">info@motto.com</p>
+                <p class="footer-contacts__address">2150 BA Nieuw-Vennep</p>
+                <p class="footer-contacts__land">The Ukraine</p>
+                <p class="footer-contacts__tel">Tel: +31 252 662248</p>
+            </div>
+            <div class="footer-shop">
+                <h3 class="footer-shop-title">Магазин</h3>
+                <a href="#" class="footer-shop__link">Сільськогосподарська техніка</a>
+                <a href="#" class="footer-shop__link">Мототехніка</a>
+                <a href="#" class="footer-shop__link">Велосипеди</a>
+                <a href="#" class="footer-shop__link">Додаткове обладнання</a>
+            </div>
+            <div class="footer-services">
+                <h3 class="footer-services-title">Послуги</h3>
+                <a href="#" class="footer-services__link">Сервіс</a>
+                <a href="#" class="footer-services__link">Гарантія</a>
+                <a href="#" class="footer-services__link">Доставка</a>
+                <a href="#" class="footer-services__link">Кредит</a>
+            </div>
+            <div class="footer-social">
+                <h3 class="footer-social-title">Соцмережі</h3>
+                <div class="footer-social__items">
+                    <a href="#" class="footer-social__items-facebook">f</a>
+                    <a href="#" class="footer-social__items-twitter"><img src="img/social/twitter.png" alt="twitter"></a>
+                    <a href="#" class="footer-social__items-instagram"><img src="img/social/instagram.png" alt="instagram"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="sellar">
+    <div class="sellar-line"></div>
+    <div class="container">
+        <div class="sellar-content">
+            <p class="sellar-content__name">&#169 2019 Мотоекшен</p>
+            <p class="sellar-content__terms">Terms & Conditions</p>
+            <p class="sellar-content__privacy">Privacy</p>
+        </div>       
+    </div>
+</section>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+
+<!-- Слайдер -->
+
+<script>
+    $(document).ready(
+        $('.main-slider-window').slick()
+    )
+</script>
+
+<!-- <script>
+    var modal = document.getElementById("registrationModal");
+    var btn = document.getElementById("registration");
+    var span = document.getElementsByClassName("close");
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+</script> -->
+
+
+
+</body>
+</html>

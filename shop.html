@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-section">
+                <a href="#"><img class="header-logo" src="img/logo.png" alt="logo"></a>
+                <input type="text" placeholder="Я шукаю ..." class="header__input">
+            </div>
+            <div class="header-icons">
+                <button class="header__basket">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="28" viewBox="0 0 32 28">
+                        <path fill="#C8C8C8" fill-rule="evenodd" d="M11.656 9.02v.03c0 1.863 1.427 3.374 3.188 3.374 1.76 0 3.188-1.511 3.188-3.375V9.02h12.36c.888 0 1.608.756 1.608 1.688 0 .931-.72 1.687-1.608 1.687l-.996-.001-5.972 14.624H8.417L2.443 12.394h-.835C.72 12.395 0 11.64 0 10.709 0 9.776.72 9.02 1.608 9.02l10.048-.001zm-.686 5.592h-.44a.998.998 0 0 0-.998.998v7.034c0 .552.446.999.998.999h.44a.998.998 0 0 0 .999-.999V15.61a.998.998 0 0 0-.999-.998zm5.22 0h-.473a.998.998 0 0 0-.998.998v7.034c0 .552.446.999.998.999h.472a1 1 0 0 0 1-.999V15.61a.999.999 0 0 0-1-.998zm5.155 0h-.472a.999.999 0 0 0-.999.998v7.034c0 .552.448.999.999.999h.472a1 1 0 0 0 1-.999V15.61a.999.999 0 0 0-1-.998zM19.528.206c.66.423.886 1.36.505 2.094l-3.675 7.08c-.38.733-1.223.984-1.882.561-.66-.423-.886-1.361-.506-2.094l3.676-7.08c.381-.734 1.223-.985 1.882-.561z"/>
+                    </svg>
+                </button>
+                <button class="header__login">Вхід</button>
+                <button id="registration" class="header__registration">Реєстрація</button>
+            </div>
+            <div id="registrationModal" class="modal">
+                <div class="registrationModal-content">
+                    <!-- <span class="close">&times;</span> -->
+                    <h2 class="registrationModal-content__title">Sign Up</h2>
+                    <form action="" class="registrationModal-form">
+                        <div class="registrationModal-text">
+                            <label for=".registrationModal__input" class="registrationModal__name">Ім'я</label>
+                            <p class="registrationModal__star">*</p>
+                        </div>
+                        <input type="text" class="registrationModal__input">
+                        <div class="registrationModal-text">
+                            <label for=".registrationModal__input" class="registrationModal__name">Ім'я</label>
+                            <p class="registrationModal__star">*</p>
+                        </div>
+                        <input type="text" class="registrationModal__input">
+                        <div class="registrationModal-text">
+                            <label for=".registrationModal__input" class="registrationModal__name">Ім'я</label>
+                            <p class="registrationModal__star">*</p>
+                        </div>
+                        <input type="text" class="registrationModal__input">
+                        <div class="registrationModal-text">
+                            <label for=".registrationModal__input" class="registrationModal__name">Ім'я</label>
+                            <p class="registrationModal__star">*</p>
+                        </div>
+                        <input type="text" class="registrationModal__input">
+                        <button class="agree-btn"></button>
+                        <p class="agree-text">I agree to</p>
+                        <button class="registrationModal-content-btn">Sign Up</button>
+                        <span class="registrationModal-content__acc">Have account?</span>
+                        <a href="" class="registrationModal-content__signIn"></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+     
+<!--     
+    <section class="nav">
+        <div class="container">
+            <div class="navbar">
+                <div class="navbar-wrap">
+                    <div class="navbar__element">
+                        <div class="navbar__element-text">
+                            <div class="">
+                                <a href="#" class="toggle">Сільськогосподарська техніка</a>
+                            </div>
+                        </div>
+                        <div class="navbar__links" id="navlinks">
+                            
+                            <div class="navbar__links-header">
+                                <h3 class="navbar__links-title">Сільськогосподарська техніка</h3>
+                                <p class="navbar__links-number">232 товари</p>
+                            </div>
+                            <div class="navbar__links-line"></div>
+                            <div class="navbar__links-main">
+                                <div class="navbar__links-main-item">Мототрактори</div>
+                                <div class="navbar__links-main-item">Трактори</div>
+                                <div class="navbar__links-main-item">Мотоблоки</div>
+                                <div class="navbar__links-main-item">Запчастини</div>
+                                <div class="navbar__links-main-item">Двигуни</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="navbar__element">
+                        <div class="navbar__element-text">
+                            <div class="">
+                                <a href="#" class="toggle">Сільськогосподарська техніка</a>
+                            </div>
+                        </div>
+                        <div class="navbar__links" id="navlinks">
+                            <div class="navbar__links-container">
+                                <div class="navbar__links-header">
+                                    <h3 class="navbar__links-title">Сільськогосподарська техніка</h3>
+                                    <p class="navbar__links-number">232 товари</p>
+                                </div>
+                                <div class="navbar__links-line"></div>
+                                <div class="navbar__links-main">
+                                    <div class="navbar__links-main-item">Мототрактори</div>
+                                    <div class="navbar__links-main-item">Трактори</div>
+                                    <div class="navbar__links-main-item">Мотоблоки</div>
+                                    <div class="navbar__links-main-item">Запчастини</div>
+                                    <div class="navbar__links-main-item">Двигуни</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar__element">
+                        <div class="navbar__element-text">
+                            <div class="">
+                                <a href="#" class="toggle">Сільськогосподарська техніка</a>
+                            </div>
+                        </div>
+                        <div class="navbar__links" id="navlinks">
+                            <div class="navbar__links-container">
+                                <div class="navbar__links-header">
+                                    <h3 class="navbar__links-title">Сільськогосподарська техніка</h3>
+                                    <p class="navbar__links-number">232 товари</p>
+                                </div>
+                                <div class="navbar__links-line"></div>
+                                <div class="navbar__links-main">
+                                    <div class="navbar__links-main-item">Мототрактори</div>
+                                    <div class="navbar__links-main-item">Трактори</div>
+                                    <div class="navbar__links-main-item">Мотоблоки</div>
+                                    <div class="navbar__links-main-item">Запчастини</div>
+                                    <div class="navbar__links-main-item">Двигуни</div>
+                                </div>
+                            </div>
+                </div>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+<section class="shop">
+    <div class="container">
+        <div class="shop-content">
+            <div class="shop-header">
+                <h3 class="shop__title">Сільськогосподарська техніка</h3>
+                <h3 class="shop__arrow">></h3>
+                <h3 class="shop__subtitle">Міні-трактори</h3>
+            </div>
+            <div class="shop-main">
+                <div class="shop-base">
+                    <div class="shop-base-content">
+                        <div class="shop-paragraphs">
+                            <div class="shop-base-title">Місце розташування</div>
+                            <button class="shop-btn-plus">+</button>
+                            <div class="shop-paragraph">
+                                <div class="shop-place">
+                                    <div class="">
+                                        <div class="shop-base-list">
+                                            <input class="shop-btn-list" type="checkbox">
+                                            <span class="shop-base-list-text">Farm</span>
+                                        </div>
+                                        <div class="shop-base-list">
+                                            <input class="shop-btn-list" type="checkbox">
+                                            <span class="shop-base-list-text">DAR</span>
+                                        </div>
+                                        <div class="shop-base-list">
+                                            <input class="shop-btn-list" type="checkbox">
+                                            <span class="shop-base-list-text">NNO</span>
+                                        </div>
+                                        <div class="shop-base-list">
+                                            <input class="shop-btn-list" type="checkbox">
+                                            <span class="shop-base-list-text">Coastal</span>
+                                        </div>
+                                        <div class="shop-base-list">
+                                            <input class="shop-btn-list" type="checkbox">
+                                            <span class="shop-base-list-text">Global</span>
+                                        </div>
+                                        <div class="shop-base-list">
+                                            <input class="shop-btn-list" type="checkbox">
+                                            <span class="shop-base-list-text">Medieval</span>
+                                        </div>
+                                        <div class="shop-base-list">
+                                            <input class="shop-btn-list" type="checkbox">
+                                            <span class="shop-base-list-text">Industrial</span>
+                                        </div>
+                                        <div class="shop-base-list">
+                                            <input class="shop-btn-list" type="checkbox">
+                                            <span class="shop-base-list-text">Americana</span>
+                                        </div>
+                                        <div class="shop-base-list">
+                                            <input class="shop-btn-list" type="checkbox">
+                                            <span class="shop-base-list-text">OP-11</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shop-base-title">Місце розташування</div>
+                            <button class="shop-btn-plus">+</button>
+                            <div class="shop-paragraph">
+                                <div class="shop-place">
+                                    <div class="">
+                                        <div class="shop-base-list">
+                                            <input class="shop-btn-list" type="checkbox">
+                                            <span class="shop-base-list-text">Україна</span>
+                                        </div>
+                                        <div class="shop-base-list">
+                                            <input class="shop-btn-list" type="checkbox">
+                                            <span class="shop-base-list-text">Європа</span>
+                                        </div>
+                                        <div class="shop-base-list">
+                                            <input class="shop-btn-list" type="checkbox">
+                                            <span class="shop-base-list-text">СНД</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shop-base-title">Ціна</div>
+                            <div class="shop-price-overflow">
+                                <div class="shop-price-overflow-light"></div>
+                                <div class="shop-price-overflow-dark"></div>
+                                <div class="shop-price-overflow-dark"></div>
+                            </div>
+                            <div class="shop-price-content">
+                                <span class="shop-price">$10</span>
+                                <span class="shop-price">$58</span>
+                            </div>
+                            <div class="shop-base-title">Рік випуску</div>
+                            <div class="shop-year-overflow">
+                                <div class="shop-year-overflow-light"></div>
+                                <div class="shop-year-overflow-dark"></div>
+                                <div class="shop-year-overflow-dark"></div>
+                            </div>
+                            <div class="shop-year-content">
+                                <span class="shop-year">2012</span>
+                                <span class="shop-year">2019</span>
+                            </div>
+                            <div class="shop-base-title">Потужність двигуна</div>
+                            <div class="shop-engine-content">
+                                <input class="shop-engine-range" type="range" min="0" max="50" value="0,33">
+                                <label for="shop-engine-range">0 к. с.</label>
+                            </div>
+                            <div class="shop-base-title">Colors</div>
+                            <div class="shop-colors">
+                                <div class="shop-colors-btn">
+                                    <button class="shop-colors-btn-black"></button>
+                                    <button class="shop-colors-btn-white"></button>
+                                    <button class="shop-colors-btn-red"></button>
+                                    <button class="shop-colors-btn-blue"></button>
+                                    <button class="shop-colors-btn-yellow"></button>
+                                    <button class="shop-colors-btn-green"></button>
+                                    <button class="shop-colors-btn-grey"></button>
+                                </div>
+                            </div>
+                            <div class="shop-base-title">Customer rating</div>
+                            <div class="shop-stars">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="shop-stars-color" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#e04d27" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="shop-stars-color" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#e04d27" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="shop-stars-color" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#e04d27" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" class="shop-stars-color" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#c8c8c8" d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path></svg>
+                                <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" class="shop-stars-color" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#c8c8c8" d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-cards">
+                    <div class="shop-cards-content">
+                        <div class="shop-card">
+                            <div>
+                                <img class="shop-card-img" src="img/sellings/14905.png" alt="">
+                            </div>
+                            <div class="shop-card-text">
+                                <p class="shop-card-title">Farm</p>
+                                <p class="shop-card-name">Magnum 380 Prestige Traktor</p>
+                                <p class="shop-card-price">$29,354.75</p>
+                            </div>
+                        </div>
+                        <div class="shop-card">
+                            <div>
+                                <img class="shop-card-img" src="img/sellings/14905.png" alt="">
+                            </div>
+                            <div class="shop-card-text">
+                                <p class="shop-card-title">Farm</p>
+                                <p class="shop-card-name">Magnum 380 Prestige Traktor</p>
+                                <p class="shop-card-price">$29,354.75</p>
+                            </div>
+                        </div>
+                        <div class="shop-card">
+                            <div>
+                                <img class="shop-card-img" src="img/sellings/14905.png" alt="">
+                            </div>
+                            <div class="shop-card-text">
+                                <p class="shop-card-title">Farm</p>
+                                <p class="shop-card-name">Magnum 380 Prestige Traktor</p>
+                                <p class="shop-card-price">$29,354.75</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <button class="shop-btn-more">Загрузити ще</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-contacts">
+                    <img src="img/logo.png" alt="logo" class="footer-contacts__logo">
+                    <p class="footer-contacts__mail">info@motto.com</p>
+                    <p class="footer-contacts__address">2150 BA Nieuw-Vennep</p>
+                    <p class="footer-contacts__land">The Ukraine</p>
+                    <p class="footer-contacts__tel">Tel: +31 252 662248</p>
+                </div>
+                <div class="footer-shop">
+                    <h3 class="footer-shop-title">Магазин</h3>
+                    <a href="#" class="footer-shop__link">Сільськогосподарська техніка</a>
+                    <a href="#" class="footer-shop__link">Мототехніка</a>
+                    <a href="#" class="footer-shop__link">Велосипеди</a>
+                    <a href="#" class="footer-shop__link">Додаткове обладнання</a>
+                </div>
+                <div class="footer-services">
+                    <h3 class="footer-services-title">Послуги</h3>
+                    <a href="#" class="footer-services__link">Сервіс</a>
+                    <a href="#" class="footer-services__link">Гарантія</a>
+                    <a href="#" class="footer-services__link">Доставка</a>
+                    <a href="#" class="footer-services__link">Кредит</a>
+                </div>
+                <div class="footer-social">
+                    <h3 class="footer-social-title">Соцмережі</h3>
+                    <div class="footer-social__items">
+                        <a href="#" class="footer-social__items-facebook">f</a>
+                        <a href="#" class="footer-social__items-twitter"><img src="img/social/twitter.png" alt="twitter"></a>
+                        <a href="#" class="footer-social__items-instagram"><img src="img/social/instagram.png" alt="instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sellar">
+        <div class="sellar-line"></div>
+        <div class="container">
+            <div class="sellar-content">
+                <p class="sellar-content__name">&#169 2019 Мотоекшен</p>
+                <p class="sellar-content__terms">Terms & Conditions</p>
+                <p class="sellar-content__privacy">Privacy</p>
+            </div>       
+        </div>
+    </section>
+
+    <script src="js/shop.js"></script>
+    
+</body>
+</html>

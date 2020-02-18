@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сторінка продукту</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-section">
+                <a href="#"><img class="header-logo" src="img/logo.png" alt="logo"></a>
+                <input type="text" placeholder="Я шукаю ..." class="header__input">
+            </div>
+            <div class="header-icons">
+                <button class="header__basket">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="28" viewBox="0 0 32 28">
+                        <path fill="#C8C8C8" fill-rule="evenodd" d="M11.656 9.02v.03c0 1.863 1.427 3.374 3.188 3.374 1.76 0 3.188-1.511 3.188-3.375V9.02h12.36c.888 0 1.608.756 1.608 1.688 0 .931-.72 1.687-1.608 1.687l-.996-.001-5.972 14.624H8.417L2.443 12.394h-.835C.72 12.395 0 11.64 0 10.709 0 9.776.72 9.02 1.608 9.02l10.048-.001zm-.686 5.592h-.44a.998.998 0 0 0-.998.998v7.034c0 .552.446.999.998.999h.44a.998.998 0 0 0 .999-.999V15.61a.998.998 0 0 0-.999-.998zm5.22 0h-.473a.998.998 0 0 0-.998.998v7.034c0 .552.446.999.998.999h.472a1 1 0 0 0 1-.999V15.61a.999.999 0 0 0-1-.998zm5.155 0h-.472a.999.999 0 0 0-.999.998v7.034c0 .552.448.999.999.999h.472a1 1 0 0 0 1-.999V15.61a.999.999 0 0 0-1-.998zM19.528.206c.66.423.886 1.36.505 2.094l-3.675 7.08c-.38.733-1.223.984-1.882.561-.66-.423-.886-1.361-.506-2.094l3.676-7.08c.381-.734 1.223-.985 1.882-.561z"/>
+                    </svg>
+                </button>
+                <button class="header__login">Вхід</button>
+                <button id="registration" class="header__registration">Реєстрація</button>
+            </div>
+            <div id="registrationModal" class="modal">
+                <div class="registrationModal-content">
+                    <!-- <span class="close">&times;</span> -->
+                    <h2 class="registrationModal-content__title">Sign Up</h2>
+                    <form action="" class="registrationModal-form">
+                        <div class="registrationModal-text">
+                            <label for=".registrationModal__input" class="registrationModal__name">Ім'я</label>
+                            <p class="registrationModal__star">*</p>
+                        </div>
+                        <input type="text" class="registrationModal__input">
+                        <div class="registrationModal-text">
+                            <label for=".registrationModal__input" class="registrationModal__name">Ім'я</label>
+                            <p class="registrationModal__star">*</p>
+                        </div>
+                        <input type="text" class="registrationModal__input">
+                        <div class="registrationModal-text">
+                            <label for=".registrationModal__input" class="registrationModal__name">Ім'я</label>
+                            <p class="registrationModal__star">*</p>
+                        </div>
+                        <input type="text" class="registrationModal__input">
+                        <div class="registrationModal-text">
+                            <label for=".registrationModal__input" class="registrationModal__name">Ім'я</label>
+                            <p class="registrationModal__star">*</p>
+                        </div>
+                        <input type="text" class="registrationModal__input">
+                        <button class="agree-btn"></button>
+                        <p class="agree-text">I agree to</p>
+                        <button class="registrationModal-content-btn">Sign Up</button>
+                        <span class="registrationModal-content__acc">Have account?</span>
+                        <a href="" class="registrationModal-content__signIn"></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+     
+    
+    <section class="nav">
+        <div class="container">
+            <div class="navbar">
+                <div class="navbar-links">
+                    <a href="#" class="navbar-links-items">
+                        <h3 class="navbar-links__items">Сільськогосподарська техніка</h3>
+                    </a>
+                    <a href="#" class="navbar-links-items">
+                        <h3 class="navbar-links__items">Мототехніка</h3>
+                    </a>
+                    <a href="#" class="navbar-links-items">
+                        <h3 class="navbar-links__items">Велосипеди</h3>
+                    </a>
+                    <a href="#" class="navbar-links-items">
+                        <h3 class="navbar-links__items">Додаткове обладнання</h3>
+                    </a>
+                    <a href="#" class="navbar-links-items">
+                        <h3 class="navbar-links__items">Послуги</h3>
+                    </a>
+                    <a href="#" class="navbar-links-items">
+                        <h3 class="navbar-links__items">Про нас</h3>
+                    </a>
+                    <a href="#" class="navbar-links-items">
+                        <h3 class="navbar-links__items">Контакти</h3>
+                    </a>
+                    <a href="#" class="navbar-links-items">
+                        <h3 class="navbar-links__items">Поради</h3>
+                    </a>
+                </div>
+                <div class="navbar-links-menu">
+                    <div class="navbar-links-menu__agricultural">
+                        <div class="navbar-links-menu-header">
+                            <h3 class="navbar-links-menu__title">Сільськогосподарська техніка</h3>
+                            <span class="navbar-links-menu__span">232 товари</span>
+                        </div>
+                        <div class="navbar-links-menu-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page">
+        <div class="container">
+            <div class="page-content">
+                <div class="page-content-title">
+                    <a class="page-content__title">Сільськогосподарська техніка</a>
+                    <a class="page-content__title">></a>
+                    <a class="page-content__title">Міні-трактори</a>
+                    <a class="page-content__title">></a>
+                    <a class="page-content__title">Magnum 380 Prestige Traktor</a>
+                </div>
+                <div class="page-content-window">
+                    <div class="page-content-page">
+                        <div class="page-content-main">
+                            <div class="page-content-main-slider">
+                                <div class="page-content-main-image">
+                                    <img src="img/14905.png" alt="" width="620px">
+                                </div>
+                            </div>
+                            <div class="page-content-main-text">
+                                <span class="page-content-main-text-span">В наявності</span>
+                                <h1 class="page-content-main-text-title">Magnum 380 Prestige Tractor</h1>
+                                <div class="page-content-main-text-price">
+                                    <p class="page-content-main-text-price__new">$125,000</p>
+                                    <p class="page-content-main-text-price__old">$255,000</p>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="page-content-main-text-star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#e04d27" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="page-content-main-text-star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#e04d27" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="page-content-main-text-star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#e04d27" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="page-content-main-text-star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#e04d27" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="page-content-main-text-star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#e04d27" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                    <p class="page-content-main-text-rating">5 з 5</p>
+                                </div>
+                                <div class="page-content-characteristic">
+                                    <h3>Характеристика</h3>
+                                </div>
+                                <div>
+                                    <div class="page-content-main-text-block">
+                                        <h3 class="page-content-main-text-block__title">Марка:</h3>
+                                        <span class="page-content-main-text-block__span">Magnum</span>
+                                    </div>
+                                    <div class="page-content-main-text-block">
+                                        <h3 class="page-content-main-text-block__title">Модель:</h3>
+                                        <span class="page-content-main-text-block__span">Farm</span>
+                                    </div>
+                                    <div class="page-content-main-text-block">
+                                        <h3 class="page-content-main-text-block__title">Тип:</h3>
+                                        <span class="page-content-main-text-block__span">міні-трактор</span>
+                                    </div>
+                                    <div class="page-content-main-text-block">
+                                        <h3 class="page-content-main-text-block__title">Рік:</h3>
+                                        <span class="page-content-main-text-block__span">1996</span>
+                                    </div>
+                                </div>
+                                <div class="page-content-characteristic">
+                                    <h3>Кількість</h3>
+                                </div>
+                                <div class="page-content-main-btn">
+                                    <button><div class="page-content-main-btn__minus">-</div></button>
+                                    <div class="page-content-main-btn__number">1</div>
+                                    <button><div class="page-content-main-btn__plus">+</div></button>
+                                </div>
+                                <div class="page-content-main-btn-bought">
+                                    <button class="page-content-main-btn-bought__buy">Купити</button>
+                                    <button class="page-content-main-btn-bought__credit">Купити в кредит</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="page-content-characteristic">
+                                <h3>Характеристика</h3>
+                            </div>
+                            <div>
+                                <div class="page-content-characteristic-content">
+                                    <div class="page-content-characteristic-content-block">
+                                        <h3 class="page-content-characteristic-content-block__title">Марка:</h3>
+                                        <span class="page-content-characteristic-content-block__span">Magnum</span>
+                                    </div>
+                                    <div class="page-content-characteristic-content-block">
+                                        <h3 class="page-content-characteristic-content-block__title">Габаритні розміри:</h3>
+                                        <span class="page-content-characteristic-content-block__span">3.5 м х 1 м х 1.5 м</span>
+                                    </div>
+                                </div>
+                                <div class="page-content-characteristic-content">
+                                    <div class="page-content-characteristic-content-block">
+                                        <h3 class="page-content-characteristic-content-block__title">Модель:</h3>
+                                        <span class="page-content-characteristic-content-block__span">Prestige</span>
+                                    </div>
+                                    <div class="page-content-characteristic-content-block">
+                                        <h3 class="page-content-characteristic-content-block__title">Паливний бак:</h3>
+                                        <span class="page-content-characteristic-content-block__span">18 л</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="page-content-characteristic-lightcontent">
+                                    <div class="page-content-characteristic-lightcontent-block">
+                                        <h3 class="page-content-characteristic-lightcontent-block__title">Тип:</h3>
+                                        <span class="page-content-characteristic-lightcontent-block__span">міні-трактор</span>
+                                    </div>
+                                    <div class="page-content-characteristic-lightcontent-block">
+                                        <h3 class="page-content-characteristic-lightcontent-block__title">Стан:</h3>
+                                        <span class="page-content-characteristic-lightcontent-block__span">новий</span>
+                                    </div>
+                                </div>
+                                <div class="page-content-characteristic-lightcontent">
+                                    <div class="page-content-characteristic-lightcontent-block">
+                                        <h3 class="page-content-characteristic-lightcontent-block__title page-content-characteristic-lightcontent-block__title-second">Рік:</h3>
+                                        <span class="page-content-characteristic-lightcontent-block__span page-content-characteristic-lightcontent-block__span-second">1996</span>
+                                    </div>
+                                    <div class="page-content-characteristic-lightcontent-block">
+                                        <h3 class="page-content-characteristic-lightcontent-block__title page-content-characteristic-lightcontent-block__title-second">Колір:</h3>
+                                        <span class="page-content-characteristic-lightcontent-block__span page-content-characteristic-lightcontent-block__span-second">червоний</span>
+                                    </div>
+                                </div>
+                                <div class="page-content-characteristic-lightcontent">
+                                    <div class="page-content-characteristic-lightcontent-block">
+                                        <h3 class="page-content-characteristic-lightcontent-block__title page-content-characteristic-lightcontent-block__title-third">Пробіг:</h3>
+                                        <span class="page-content-characteristic-lightcontent-block__span page-content-characteristic-lightcontent-block__span-third">1 км</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="page-content-btn">Читати більше</button>
+                        </div>
+                    </div>
+                    <div class="page-content-page">
+                        <div class="page-content-main">
+                            <div class="page-content-main-slider">
+                                <div class="page-content-main-image">
+                                    <img src="img/14905.png" alt="" width="620px">
+                                </div>
+                            </div>
+                            <div class="page-content-main-text">
+                                <span class="page-content-main-text-span">В наявності</span>
+                                <h1 class="page-content-main-text-title">Magnum 380 Prestige Tractor</h1>
+                                <div class="page-content-main-text-price">
+                                    <p class="page-content-main-text-price__new">$125,000</p>
+                                    <p class="page-content-main-text-price__old">$255,000</p>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="page-content-main-text-star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#e04d27" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="page-content-main-text-star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#e04d27" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="page-content-main-text-star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#e04d27" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="page-content-main-text-star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#e04d27" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="page-content-main-text-star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#e04d27" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                    <p class="page-content-main-text-rating">5 з 5</p>
+                                </div>
+                                <div class="page-content-characteristic">
+                                    <h3>Характеристика</h3>
+                                </div>
+                                <div>
+                                    <div class="page-content-main-text-block">
+                                        <h3 class="page-content-main-text-block__title">Марка:</h3>
+                                        <span class="page-content-main-text-block__span">Magnum</span>
+                                    </div>
+                                    <div class="page-content-main-text-block">
+                                        <h3 class="page-content-main-text-block__title">Модель:</h3>
+                                        <span class="page-content-main-text-block__span">Farm</span>
+                                    </div>
+                                    <div class="page-content-main-text-block">
+                                        <h3 class="page-content-main-text-block__title">Тип:</h3>
+                                        <span class="page-content-main-text-block__span">міні-трактор</span>
+                                    </div>
+                                    <div class="page-content-main-text-block">
+                                        <h3 class="page-content-main-text-block__title">Рік:</h3>
+                                        <span class="page-content-main-text-block__span">1996</span>
+                                    </div>
+                                </div>
+                                <div class="page-content-characteristic">
+                                    <h3>Кількість</h3>
+                                </div>
+                                <div class="page-content-main-btn">
+                                    <button><div class="page-content-main-btn__minus">-</div></button>
+                                    <div class="page-content-main-btn__number">1</div>
+                                    <button><div class="page-content-main-btn__plus">+</div></button>
+                                </div>
+                                <div class="page-content-main-btn-bought">
+                                    <button class="page-content-main-btn-bought__buy">Купити</button>
+                                    <button class="page-content-main-btn-bought__credit">Купити в кредит</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="page-content-characteristic">
+                                <h3>Характеристика</h3>
+                            </div>
+                            <div>
+                                <div class="page-content-characteristic-content">
+                                    <div class="page-content-characteristic-content-block">
+                                        <h3 class="page-content-characteristic-content-block__title">Марка:</h3>
+                                        <span class="page-content-characteristic-content-block__span">Magnum</span>
+                                    </div>
+                                    <div class="page-content-characteristic-content-block">
+                                        <h3 class="page-content-characteristic-content-block__title">Габаритні розміри:</h3>
+                                        <span class="page-content-characteristic-content-block__span">3.5 м х 1 м х 1.5 м</span>
+                                    </div>
+                                </div>
+                                <div class="page-content-characteristic-content">
+                                    <div class="page-content-characteristic-content-block">
+                                        <h3 class="page-content-characteristic-content-block__title">Модель:</h3>
+                                        <span class="page-content-characteristic-content-block__span">Prestige</span>
+                                    </div>
+                                    <div class="page-content-characteristic-content-block">
+                                        <h3 class="page-content-characteristic-content-block__title">Паливний бак:</h3>
+                                        <span class="page-content-characteristic-content-block__span">18 л</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="page-content-characteristic-lightcontent">
+                                    <div class="page-content-characteristic-lightcontent-block">
+                                        <h3 class="page-content-characteristic-lightcontent-block__title">Тип:</h3>
+                                        <span class="page-content-characteristic-lightcontent-block__span">міні-трактор</span>
+                                    </div>
+                                    <div class="page-content-characteristic-lightcontent-block">
+                                        <h3 class="page-content-characteristic-lightcontent-block__title">Стан:</h3>
+                                        <span class="page-content-characteristic-lightcontent-block__span">новий</span>
+                                    </div>
+                                </div>
+                                <div class="page-content-characteristic-lightcontent">
+                                    <div class="page-content-characteristic-lightcontent-block">
+                                        <h3 class="page-content-characteristic-lightcontent-block__title page-content-characteristic-lightcontent-block__title-second">Рік:</h3>
+                                        <span class="page-content-characteristic-lightcontent-block__span page-content-characteristic-lightcontent-block__span-second">1996</span>
+                                    </div>
+                                    <div class="page-content-characteristic-lightcontent-block">
+                                        <h3 class="page-content-characteristic-lightcontent-block__title page-content-characteristic-lightcontent-block__title-second">Колір:</h3>
+                                        <span class="page-content-characteristic-lightcontent-block__span page-content-characteristic-lightcontent-block__span-second">червоний</span>
+                                    </div>
+                                </div>
+                                <div class="page-content-characteristic-lightcontent">
+                                    <div class="page-content-characteristic-lightcontent-block">
+                                        <h3 class="page-content-characteristic-lightcontent-block__title page-content-characteristic-lightcontent-block__title-third">Пробіг:</h3>
+                                        <span class="page-content-characteristic-lightcontent-block__span page-content-characteristic-lightcontent-block__span-third">1 км</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="page-content-btn">Читати більше</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-products">
+        <div class="container">
+            <div class="page-content-products">
+                <h2 class="page-content-products__title">Схожі товари</h2>
+            </div>
+            <div class="page-products-slider">
+                <div class="page-products-slider-window">
+                    <div class="page-products-slider-page">
+                        <div class="page-products-slider-page-items">
+                            <div class="page-products-slider-page-items-img">
+                                <img src="img/sellings/14905.png" alt="" class="page-products-slider-page-items__img">
+                                <img src="img/sellings/14905.png" alt="" class="page-products-slider-page-items__img">
+                                <img src="img/sellings/14905.png" alt="" class="page-products-slider-page-items__img">
+                            </div>
+                            <div class="page-products-slider-page-items-title">
+                                <h3 class="page-products-slider-page-items__title">Magnum 380 Prestige Tractor</h3>
+                                <h3 class="page-products-slider-page-items__title">Magnum 380 Prestige Tractor</h3>
+                                <h3 class="page-products-slider-page-items__title">Magnum 380 Prestige Tractor</h3>
+                            </div>
+                            <div class="page-products-slider-page-items-price">
+                                <span class="page-products-slider-page-items__price">$125,000</span>
+                                <span class="page-products-slider-page-items__price">$10,399.99</span>
+                                <span class="page-products-slider-page-items__price">$354,750</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-products-slider-page">
+                        <div class="page-products-slider-page-items">
+                            <div class="page-products-slider-page-items-img">
+                                <img src="img/sellings/14905.png" alt="" class="page-products-slider-page-items__img">
+                                <img src="img/sellings/14905.png" alt="" class="page-products-slider-page-items__img">
+                                <img src="img/sellings/14905.png" alt="" class="page-products-slider-page-items__img">
+                            </div>
+                            <div class="page-products-slider-page-items-title">
+                                <h3 class="page-products-slider-page-items__title">Magnum 380 Prestige Tractor</h3>
+                                <h3 class="page-products-slider-page-items__title">Magnum 380 Prestige Tractor</h3>
+                                <h3 class="page-products-slider-page-items__title">Magnum 380 Prestige Tractor</h3>
+                            </div>
+                            <div class="page-products-slider-page-items-price">
+                                <span class="page-products-slider-page-items__price">$125,000</span>
+                                <span class="page-products-slider-page-items__price">$10,399.99</span>
+                                <span class="page-products-slider-page-items__price">$354,750</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-products-slider-page">
+                        <div class="page-products-slider-page-items">
+                            <div class="page-products-slider-page-items-img">
+                                <img src="img/sellings/14905.png" alt="" class="page-products-slider-page-items__img">
+                                <img src="img/sellings/14905.png" alt="" class="page-products-slider-page-items__img">
+                                <img src="img/sellings/14905.png" alt="" class="page-products-slider-page-items__img">
+                            </div>
+                            <div class="page-products-slider-page-items-title">
+                                <h3 class="page-products-slider-page-items__title">Magnum 380 Prestige Tractor</h3>
+                                <h3 class="page-products-slider-page-items__title">Magnum 380 Prestige Tractor</h3>
+                                <h3 class="page-products-slider-page-items__title">Magnum 380 Prestige Tractor</h3>
+                            </div>
+                            <div class="page-products-slider-page-items-price">
+                                <span class="page-products-slider-page-items__price">$125,000</span>
+                                <span class="page-products-slider-page-items__price">$10,399.99</span>
+                                <span class="page-products-slider-page-items__price">$354,750</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-contacts">
+                    <img src="img/logo.png" alt="logo" class="footer-contacts__logo">
+                    <p class="footer-contacts__mail">info@motto.com</p>
+                    <p class="footer-contacts__address">2150 BA Nieuw-Vennep</p>
+                    <p class="footer-contacts__land">The Ukraine</p>
+                    <p class="footer-contacts__tel">Tel: +31 252 662248</p>
+                </div>
+                <div class="footer-shop">
+                    <h3 class="footer-shop-title">Магазин</h3>
+                    <a href="#" class="footer-shop__link">Сільськогосподарська техніка</a>
+                    <a href="#" class="footer-shop__link">Мототехніка</a>
+                    <a href="#" class="footer-shop__link">Велосипеди</a>
+                    <a href="#" class="footer-shop__link">Додаткове обладнання</a>
+                </div>
+                <div class="footer-services">
+                    <h3 class="footer-services-title">Послуги</h3>
+                    <a href="#" class="footer-services__link">Сервіс</a>
+                    <a href="#" class="footer-services__link">Гарантія</a>
+                    <a href="#" class="footer-services__link">Доставка</a>
+                    <a href="#" class="footer-services__link">Кредит</a>
+                </div>
+                <div class="footer-social">
+                    <h3 class="footer-social-title">Соцмережі</h3>
+                    <div class="footer-social__items">
+                        <a href="#" class="footer-social__items-facebook">f</a>
+                        <a href="#" class="footer-social__items-twitter"><img src="img/social/twitter.png" alt="twitter"></a>
+                        <a href="#" class="footer-social__items-instagram"><img src="img/social/instagram.png" alt="instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="sellar">
+        <div class="sellar-line"></div>
+        <div class="container">
+            <div class="sellar-content">
+                <p class="sellar-content__name">&#169 2019 Мотоекшен</p>
+                <p class="sellar-content__terms">Terms & Conditions</p>
+                <p class="sellar-content__privacy">Privacy</p>
+            </div>       
+        </div>
+    </section>
+    
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/page.js"></script>
+
+
+    <!-- Слайдер -->
+    <script>
+        $('.page-content-window').slick({
+        });
+    </script>
+
+    <script>
+        $('.page-products-slider-window').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        adaptiveHeight: true
+        });
+    </script>
+</body>
+</html>
