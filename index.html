@@ -7,146 +7,179 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <link rel="stylesheet" href="js/navbar.js">
 </head>
 <body>
-
-<header>
-    <div class="container">
-        <div class="header-section">
-            <a href="#"><img class="header-logo" src="img/logo.png" alt="logo"></a>
-            <input type="text" placeholder="Я шукаю ..." class="header__input">
-        </div>
-        <div class="header-icons">
-            <button class="header__basket">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="28" viewBox="0 0 32 28">
-                    <path fill="#C8C8C8" fill-rule="evenodd" d="M11.656 9.02v.03c0 1.863 1.427 3.374 3.188 3.374 1.76 0 3.188-1.511 3.188-3.375V9.02h12.36c.888 0 1.608.756 1.608 1.688 0 .931-.72 1.687-1.608 1.687l-.996-.001-5.972 14.624H8.417L2.443 12.394h-.835C.72 12.395 0 11.64 0 10.709 0 9.776.72 9.02 1.608 9.02l10.048-.001zm-.686 5.592h-.44a.998.998 0 0 0-.998.998v7.034c0 .552.446.999.998.999h.44a.998.998 0 0 0 .999-.999V15.61a.998.998 0 0 0-.999-.998zm5.22 0h-.473a.998.998 0 0 0-.998.998v7.034c0 .552.446.999.998.999h.472a1 1 0 0 0 1-.999V15.61a.999.999 0 0 0-1-.998zm5.155 0h-.472a.999.999 0 0 0-.999.998v7.034c0 .552.448.999.999.999h.472a1 1 0 0 0 1-.999V15.61a.999.999 0 0 0-1-.998zM19.528.206c.66.423.886 1.36.505 2.094l-3.675 7.08c-.38.733-1.223.984-1.882.561-.66-.423-.886-1.361-.506-2.094l3.676-7.08c.381-.734 1.223-.985 1.882-.561z"/>
-                </svg>
-            </button>
-            <button class="header__login">Вхід</button>
-            <button id="registration" class="header__registration">Реєстрація</button>
-        </div>
-        <div id="registrationModal" class="modal">
-            <div class="registrationModal-content">
-                <!-- <span class="close">&times;</span> -->
-                <h2 class="registrationModal-content__title">Sign Up</h2>
-                <form action="" class="registrationModal-form">
-                    <div class="registrationModal-text">
-                        <label for=".registrationModal__input" class="registrationModal__name">Ім'я</label>
-                        <p class="registrationModal__star">*</p>
+    <div class="fade"></div>
+    <section class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-logo">
+                    <a href="index.html"><img src="img/logo.png" alt=""></a>
+                </div>
+                <div class="header-form">
+                    <div class="header-input">
+                        <input type="text" placeholder="Я шукаю ..." class="header-form__form">
                     </div>
-                    <input type="text" class="registrationModal__input">
-                    <div class="registrationModal-text">
-                        <label for=".registrationModal__input" class="registrationModal__name">Ім'я</label>
-                        <p class="registrationModal__star">*</p>
-                    </div>
-                    <input type="text" class="registrationModal__input">
-                    <div class="registrationModal-text">
-                        <label for=".registrationModal__input" class="registrationModal__name">Ім'я</label>
-                        <p class="registrationModal__star">*</p>
-                    </div>
-                    <input type="text" class="registrationModal__input">
-                    <div class="registrationModal-text">
-                        <label for=".registrationModal__input" class="registrationModal__name">Ім'я</label>
-                        <p class="registrationModal__star">*</p>
-                    </div>
-                    <input type="text" class="registrationModal__input">
-                    <button class="agree-btn"></button>
-                    <p class="agree-text">I agree to</p>
-                    <button class="registrationModal-content-btn">Sign Up</button>
-                    <span class="registrationModal-content__acc">Have account?</span>
-                    <a href="" class="registrationModal-content__signIn"></a>
-                </form>
+                   <div class="header-form-img">
+                       <button class="header-form-img-btn"><img src="img/search-icon.png" alt="" class="header-form__img"></button>
+                   </div>
+                </div>
+                <div class="header-svg">
+                    <button class="header-svg-btn"><img src="img/cart-icon.svg" alt=""></button>
+                </div>
+                <div class="header-btn">
+                    <button class="header-btn-sign">Вхід</button>
+                    <button class="header-btn-login">Реєстрація</button>
+                </div>
             </div>
         </div>
-    </div>
-</header>
- 
+        <div class="modal-sign">
+            <button class="close-sign">×</button>
+            <div class="modal-sign-content">
+                <div class="modal-sign-header">
+                    <h2 class="modal-sign-title">Sign In</h2>
+                </div>
+                <div class="modal-sign-body">
+                    <label for="modal-sign-input" class="modal-sign-label">Email</label>
+                    <p class="modal-sign-star">*</p>
+                    <input type="text" class="modal-sign-input">
+                    <label for="modal-sign-input" class="modal-sign-label">Пароль</label>
+                    <p class="modal-sign-star">*</p>
+                    <input type="text" class="modal-sign-input">
+                </div>
+                <div class="modal-sign-btn">
+                    <button class="modal-sign__btn">Sign In</button>
+                </div>
+                <div class="modal-sign-footer">
+                    <p class="modal-sign-span">Don't have account?</p>
+                    <a href="#" class="modal-sign-link">Sign Up</a>
+                </div>
+            </div>
+        </div>
+        <div class="modal-login">
+            <button class="close-login">×</button>
+            <div class="modal-login-content">
+                <div class="modal-login-header">
+                    <h2 class="modal-login-title">Sign Up</h2>
+                </div>
+                <div class="modal-login-body">
+                    <label for="modal-login-input" class="modal-login-label">Ім'я</label>
+                    <p class="modal-login-star">*</p>
+                    <input type="text" class="modal-login-input">
+                    <label for="modal-login-input" class="modal-login-label">Фамілія</label>
+                    <p class="modal-login-star">*</p>
+                    <input type="text" class="modal-login-input">
+                    <label for="modal-login-input" class="modal-login-label">Email</label>
+                    <p class="modal-login-star">*</p>
+                    <input type="text" class="modal-login-input">
+                    <label for="modal-login-input" class="modal-login-label">Пароль</label>
+                    <p class="modal-login-star">*</p>
+                    <input type="text" class="modal-login-input">
+                </div>
+                <div class="modal-login-checkbox">
+                    <input type="checkbox" class="modal-login__checkbox">
+                    <p class="modal-login__checkbox-text">I agree to</p>
+                </div>
+                <div class="modal-login-btn">
+                    <button class="modal-login__btn">Sign Up</button>
+                </div>
+                <div class="modal-login-footer">
+                    <p class="modal-login-span">Have account?</p>
+                    <a href="#" class="modal-login-link">Sign In</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 <section class="nav">
     <div class="container">
         <div class="navbar">
             <div class="navbar-links">
-                <a href="#" class="navbar-links-items">
-                    <h3 class="navbar-links__items">Сільськогосподарська техніка</h3>
+                <a href="#" class="navbar-links__items">
+                    <h3 class="navbar-links__items-agricultural">Сільськогосподарська техніка</h3>
                 </a>
-                <div class="navbar-links-menu">
-                    <div class="navbar-links-menu__agricultural">
-                        <div class="navbar-links-menu-header">
-                            <h3 class="navbar-links-menu__title">Сільськогосподарська техніка</h3>
-                            <span class="navbar-links-menu__span">232 товари</span>
-                            <p>Текст 1</p>
-                            <p>Текст 2</p>
-                            <p>Текст 3</p>
-                            <p>Текст 4</p>
-                            <p>Текст 5</p>
-                        </div>
-                        <div class="navbar-links-menu-line"></div>
+                <a href="#" class="navbar-links__items">
+                    <h3 class="navbar-links__items-motorcycle">Мототехніка</h3>
+                </a>
+                <a href="#" class="navbar-links__items">
+                    <h3 class="navbar-links__items-bicycle">Велосипеди</h3>
+                </a>
+                <a href="#" class="navbar-links__items">
+                    <h3 class="navbar-links__items-equipment">Додаткове обладнання</h3>
+                </a>
+                <a href="#" class="navbar-links__items">
+                    <h3 class="navbar-links__items-services">Послуги</h3>
+                </a>
+                <a href="about.html" class="navbar-links__items">
+                    <h3 class="navbar-links__items-about">Про нас</h3>
+                </a>
+                <a href="contacts.html" class="navbar-links__items">
+                    <h3 class="navbar-links__items-contacts">Контакти</h3>
+                </a>
+                <a href="#" class="navbar-links__items">
+                    <h3 class="navbar-links__items-advice">Поради</h3>
+                </a>
+            </div>
+            <div class="navbar-links-menu-agricultural">
+                <div class="navbar-links-menu__agricultural">
+                    <div class="navbar-links-menu-header">
+                        <h3 class="navbar-links-menu__title">Сільськогосподарська техніка</h3>
+                        <span class="navbar-links-menu__span">232 товари</span>
+                    </div>
+                    <div class="navbar-links-menu-line"></div>
+                    <div class="navbar-links-menu-items">
+                        <a href=""><p class="navbar-links-menu-items__item">Мототрактори</p></a>
+                        <a href=""><p class="navbar-links-menu-items__item">Трактори</p></a>
+                        <a href=""><p class="navbar-links-menu-items__item">Мотоблоки</p></a>
+                        <a href=""><p class="navbar-links-menu-items__item">Запчастини</p></a>
+                        <a href=""><p class="navbar-links-menu-items__item">Двигуни</p></a>
                     </div>
                 </div>
-                <a href="#" class="navbar-links-items">
-                    <h3 class="navbar-links__items">Мототехніка</h3>
-                </a>
-                <div class="navbar-links-menu">
-                    <div class="navbar-links-menu__agricultural">
-                        <div class="navbar-links-menu-header">
-                            <h3 class="navbar-links-menu__title">Сільськогосподарська техніка</h3>
-                            <span class="navbar-links-menu__span">232 товари</span>
-                            <p>Текст 1</p>
-                            <p>Текст 2</p>
-                            <p>Текст 3</p>
-                            <p>Текст 4</p>
-                            <p>Текст 5</p>
-                        </div>
-                        <div class="navbar-links-menu-line"></div>
+            </div>
+            <div class="navbar-links-menu-motorcycle">
+                <div class="navbar-links-menu__motorcycle">
+                    <div class="navbar-links-menu-header">
+                        <h3 class="navbar-links-menu__title">Мототехніка</h3>
+                        <span class="navbar-links-menu__span">232 товари</span>
+                    </div>
+                    <div class="navbar-links-menu-line"></div>
+                    <div class="navbar-links-menu-items">
+                        <a href=""><p class="navbar-links-menu-items__item">Мотоцикли</p></a>
+                        <a href=""><p class="navbar-links-menu-items__item">Скутера</p></a>
+                        <a href=""><p class="navbar-links-menu-items__item">Електроскутера</p></a>
+                        <a href=""><p class="navbar-links-menu-items__item">Квадроцикли</p></a>
+                        <a href=""><p class="navbar-links-menu-items__item">Запчастини</p></a>
+                        <a href=""><p class="navbar-links-menu-items__item">Аксесуари</p></a>
                     </div>
                 </div>
-                <a href="#" class="navbar-links-items">
-                    <h3 class="navbar-links__items">Велосипеди</h3>
-                </a>
-                <div class="navbar-links-menu">
-                    <div class="navbar-links-menu__agricultural">
-                        <div class="navbar-links-menu-header">
-                            <h3 class="navbar-links-menu__title">Сільськогосподарська техніка</h3>
-                            <span class="navbar-links-menu__span">232 товари</span>
-                            <p>Текст 1</p>
-                            <p>Текст 2</p>
-                            <p>Текст 3</p>
-                            <p>Текст 4</p>
-                            <p>Текст 5</p>
+            </div>
+            <div class="navbar-links-menu-bicycle">
+                <div class="navbar-links-menu__bicycle">
+                    <div class="navbar-links-menu-header">
+                        <h3 class="navbar-links-menu__title">Велосипеди</h3>
+                    </div>
+                    <div class="navbar-links-menu-line"></div>
+                </div>
+            </div>
+            <div class="navbar-links-menu-equipment">
+                <div class="navbar-links-menu__equipment">
+                    <div class="navbar-links-menu-header">
+                        <h3 class="navbar-links-menu__title">Додаткове обладнання</h3>
+                        <span class="navbar-links-menu__span">232 товари</span>
+                    </div>
+                    <div class="navbar-links-menu-line"></div>
+                    <div class="navbar-links-menu-items">
+                        <a href=""><p class="navbar-links-menu-items__item">Навісне та причіпне обладнання</p></a>
+                        <a href=""><p class="navbar-links-menu-items__item navbar-links-menu-items__item-spare">Запчастини</p></a>
+                        <div class="navbar-links-menu-items-hide">
+                            <a href=""><p class="navbar-links-menu-items__item">Мотоблоки</p></a>
+                            <a href=""><p class="navbar-links-menu-items__item">Мототехніка</p></a>
+                            <a href=""><p class="navbar-links-menu-items__item">Трактори</p></a>
+                            <a href=""><p class="navbar-links-menu-items__item">Мототрактори</p></a>
+                            <a href=""><p class="navbar-links-menu-items__item">Двигуни</p></a>
                         </div>
-                        <div class="navbar-links-menu-line"></div>
                     </div>
                 </div>
-                <a href="#" class="navbar-links-items">
-                    <h3 class="navbar-links__items">Додаткове обладнання</h3>
-                </a>
-                <div class="navbar-links-menu">
-                    <div class="navbar-links-menu__agricultural">
-                        <div class="navbar-links-menu-header">
-                            <h3 class="navbar-links-menu__title">Сільськогосподарська техніка</h3>
-                            <span class="navbar-links-menu__span">232 товари</span>
-                            <p>Текст 1</p>
-                            <p>Текст 2</p>
-                            <p>Текст 3</p>
-                            <p>Текст 4</p>
-                            <p>Текст 5</p>
-                        </div>
-                        <div class="navbar-links-menu-line"></div>
-                    </div>
-                </div>
-                <a href="#" class="navbar-links-items">
-                    <h3 class="navbar-links__items">Послуги</h3>
-                </a>
-                <a href="#" class="navbar-links-items">
-                    <h3 class="navbar-links__items">Про нас</h3>
-                </a>
-                <a href="#" class="navbar-links-items">
-                    <h3 class="navbar-links__items">Контакти</h3>
-                </a>
-                <a href="#" class="navbar-links-items">
-                    <h3 class="navbar-links__items">Поради</h3>
-                </a>
             </div>
         </div>
     </div>
@@ -245,7 +278,34 @@
                     <button class="selling-cards__card-btn">Купити в кредит</button>
                 </div>
             </div>
-            <button class="selling__more">Дивитись більше ></button>
+            <div class="modal-credit">
+                <div class="modal-credit-content">
+                    <button class="close-credit">×</button>
+                    <h3 class="modal-credit-title">Оформити заявку в кредит</h3>
+                    <p class="modal-credit-subtitle">Будь ласка, переконайтесь, що сума відображена в гривнях.</p>
+                    <div class="modal-credit-body">
+                        <label for="modal-credit-input" class="modal-credit-label">Ім'я</label>
+                        <p class="modal-credit-star">*</p>
+                        <input type="text" class="modal-credit-input">
+                        <label for="modal-credit-input" class="modal-credit-label">Фамілія</label>
+                        <p class="modal-credit-star">*</p>
+                        <input type="text" class="modal-credit-input">
+                        <label for="modal-credit-input" class="modal-credit-label">Дата народження</label>
+                        <p class="modal-credit-star">*</p>
+                        <input type="text" class="modal-credit-input">
+                        <label for="modal-credit-input" class="modal-credit-label">Ідентифікаційний код</label>
+                        <p class="modal-credit-star">*</p>
+                        <input type="text" class="modal-credit-input">
+                        <label for="modal-credit-input" class="modal-credit-label">Email</label>
+                        <p class="modal-credit-star">*</p>
+                        <input type="text" class="modal-credit-input">
+                        <label for="modal-credit-input" class="modal-credit-label">Телефон</label>
+                        <p class="modal-credit-star">*</p>
+                        <input type="text" class="modal-credit-input">
+                        <button class="modal-credit-btn">Надіслати</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     
@@ -373,6 +433,9 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/header.js"></script>
+
 
 
 <!-- Слайдер -->
@@ -383,17 +446,6 @@
     )
 </script>
 
-<!-- <script>
-    var modal = document.getElementById("registrationModal");
-    var btn = document.getElementById("registration");
-    var span = document.getElementsByClassName("close");
-    btn.onclick = function() {
-        modal.style.display = "block";
-    }
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-</script> -->
 
 
 

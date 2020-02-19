@@ -1,0 +1,233 @@
+.shopping
+    &-content
+        margin-top: 22px
+    &-links
+        display: flex
+        margin-bottom: 90px
+        &__link, &__arrow
+            font-size: 15px
+            font-family: sans-serif
+            color: #515151
+            margin-right: 20px
+        &__link
+            &:active
+                color: #1e1e1e
+    &-steps
+        display: flex
+        justify-content: center
+        margin-left: 150px
+        margin-bottom: 15px
+        &__one, &__two, &__three
+            position: relative
+            text-align: center
+            text-decoration: none
+            width: 25px
+            height: 25px
+            border-radius: 50%
+            background-color: #e5e5e5
+            line-height: 25px
+            font-size: 11px
+            font-family: sans-serif
+            font-weight: 600
+            margin-right: 170px
+            color: #000
+        &__one
+            background-color: #e04d27
+            color: #fff 
+        &-line 
+            position: absolute
+            z-index: -1
+            margin-top: 12px
+            margin-left: -85px
+            width: 400px
+            height: 1px
+            background-color: #e5e5e5
+            text-align: center
+    &-title
+        font-size: 30px
+        line-height: 71px
+        font-family: sans-serif
+        letter-spacing: -0.33px
+        text-align: center
+    &-body
+        margin-top: 24px
+        margin-left: 125px
+        margin-right: 125px
+    &-items
+        display: flex
+        justify-content: space-between
+    &-item, &-num, &-price
+        font-size: 12px
+        line-height: 22px
+        letter-spacing: 1px
+        text-transform: uppercase
+        font-family: sans-serif
+        color: #8d8d8d
+    &-main
+        display: flex
+        justify-content: space-between
+        width: 150px
+    &-bag
+        margin-top: 10px
+        border-top: 1px solid #e5e5e5
+        border-bottom: 1px solid #e5e5e5
+        display: flex
+        justify-content: space-between
+    &-machine
+        display: flex
+        &-img
+            width: 164px
+            height: 123px
+        &-name
+            margin-left: 26px
+            font-size: 20px
+            letter-spacing: -0.09px
+            font-family: sans-serif
+            font-weight: 300
+            line-height: 120px
+    &-info
+        display: flex
+        &-num
+            width: 48px
+            height: 48px
+            border: 1px solid #e5e5e5
+            margin-top: 35px
+            padding-top: 12px
+            text-align: center
+            font-size: 14px
+            line-height: 22px
+            letter-spacing: 1px
+            font-family: sans-serif
+            margin-right: 22px
+        &-price
+            line-height: 115px
+            font-size: 14px
+            font-family: sans-serif
+            letter-spacing: 1px
+    &-total-price
+        height: 80px
+        border-bottom: 1px solid #e5e5e5
+        margin-bottom: 40px
+        &-items
+            display: flex
+            float: right
+        &__text
+            text-transform: uppercase
+            font-family: sans-serif
+            font-size: 12px
+            line-height: 80px
+            letter-spacing: 1px
+            color: #9b9b9b
+            margin-right: 6px
+        &__price
+            text-transform: uppercase
+            font-family: sans-serif
+            font-size: 18px
+            line-height: 80px
+            letter-spacing: 1.5px
+    &-btn
+        height: 110px
+        margin-bottom: 57px
+        &-item
+            display: flex
+            float: right
+        &__btn
+            border: none
+            outline: none
+            cursor: pointer
+            border-radius: 2px
+            width: 243px
+            height: 51px
+            background-color: #e04d27
+            color: #fff 
+            font-size: 14px
+    &-btn-section
+        height: 160px
+    &-second-page, &-third-page
+        display: none
+        &-btn
+            float: right
+            margin-right: 140px
+            margin-bottom: 100px
+            &__btn
+                border: none
+                outline: none
+                cursor: pointer
+                border-radius: 2px
+                width: 243px
+                height: 51px
+                background-color: #e04d27
+                color: #fff 
+                font-size: 14px
+    &-inputs
+        margin-top: 24px
+        display: flex
+        justify-content: center
+        margin-bottom: 50px
+        &-label
+            text-transform: uppercase
+            font-size: 12px
+            line-height: 22px
+            letter-spacing: 1px
+            margin-bottom: 8px
+        &-input 
+            width: 360px
+            height: 48px
+            border: 1px solid #e5e5e5
+            border-radius: 2px
+            font-size: 16px
+            padding-left: 20px
+            margin-bottom: 24px
+        &-first-column
+            margin-right: 40px
+    &-pay-cards 
+        display: flex
+        justify-content: center
+        margin-bottom: 45px
+    &-visa-card, &-paypal-card
+        width: 376px
+        height: 78px
+        border: none
+        border: 1px solid #e5e5e5
+        background-color: #fff 
+        outline: none
+        text-align: center
+        line-height: 100px
+        &:hover 
+            background-color: #fafafa
+            cursor: pointer
+            border: 1px solid #998e76
+    &-third-page
+        &-inputs
+            display: flex
+            justify-content: center
+            margin-bottom: 24px
+            &__name
+                margin-right: 30px
+    &-cards-data
+        display: flex
+        margin-bottom: 50px
+        &-expire
+            margin-left: 235px
+        &-select
+            width: 165px
+            height: 48px
+            padding-left: 15px
+            border: 1px solid #e5e5e5   
+            margin-right: 30px
+        &-cvv 
+            margin-right: 23px
+            &__input
+                width: 165px
+                height: 48px
+                padding-left: 15px
+                border: 1px solid #e5e5e5
+                font-size: 18px
+    &-cards-span
+        padding-top: 40px
+        font-size: 14px
+        font-family: sans-serif
+        color: #8d8d8d
+        text-decoration: underline
+
+           

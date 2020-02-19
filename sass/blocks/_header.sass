@@ -1,100 +1,215 @@
-header
-  height: 100px
-  width: 100%
-  background-color: #2a3860 
-  display: flex
-  justify-content: space-between
-  align-items: center
-  line-height: 100px
+body 
+    overflow-x: hidden
 .header
-  &-section
-      display: inline-block
-  &-logo
-      width: 187px
-      height: 40px
-      margin-right: 90px
-  &__input
-      height: 40px
-      width: 325px
-      border-radius: 5px
-      border: none
-      outline: none
-      font-size: 19px
-      padding-left: 23px
-      color: #9f9f9f
-      background-image: url(../img/search-icon.png)
-      background-repeat: no-repeat
-      background-position: 285px
-  &-icons
-      display: inline-block
-      margin-left: 300px
-  &__basket
-      cursor: pointer
-      height: 27px
-      width: 32px
-      background-color: #2a3860
-      border: none
-      outline: none
-  &__login
-      width: 99px
-      height: 40px
-      margin-right: 20px
-      margin-left: 40px
-  &__registration
-      width: 109px
-      height: 40px
-  &__login, &__registration
-      background-color: #2a3860 
-      border: 1px solid #fff 
-      border-radius: 5px
-      cursor: pointer
-      color: #fff 
-      outline: none
-
-.modal
-    display: none
-    margin-left: 300px  
-    position: fixed
-    z-index: 1
-    border: 2px solid red
-    width: 620px
-    height: 740px
-.close
-    float: right
-    margin-bottom: 30px
-.registrationModal
+    background-color: #2a3860
+    height: 100px
+    width: 100%
     &-content
-        background-color: #fff 
-        margin: auto
-        padding: 30px 
-        width: 100%
-        &__title
-            text-align: center
-            font-size: 18px
-            line-height: 18px
+        display: flex
+        justify-content: space-between
+    &-logo 
+        line-height: 130px
+    &-form 
+        line-height: 100px
+        &__form
+            margin-top: 25px
+            position: absolute
+            padding-left: 23px
+            width: 475px
+            height: 50px
+            outline: none
+            border: none
+            border-radius: 5px
+            font-size: 19px
+            &::-webkit-input-placeholder
+                color: #9f9f9f
+            &::-moz-placeholder
+                color: #9f9f9f
+        &-img
+            position: relative
+            margin-left: 432px
+            margin-top: 8px
+            &-btn 
+                border: none
+                background-color: #fff 
+                outline: none
+                cursor: pointer
+    &-svg 
+        line-height: 115px
+        margin-left: 150px
+        &-btn 
+            outline: none
+            border: none
+            cursor: pointer
+            background-color: #2a3860
+    &-btn 
+        line-height: 100px
+        &-sign, &-login
+            background-color: #2a3860
+            border: 1px solid #cecece
+            border-radius: 5px 
+            color: #ddd 
+            cursor: pointer
+            outline: none
+        &-sign
+            width: 99px
+            height: 40px
+            margin-right: 20px
+        &-login
+            width: 109px
+            height: 40px
+.modal
+    &-sign, &-login
+        display: none
+        position: fixed
+        z-index: 20
+        margin-top: 20px
+        margin-left: 25%
+        width: 619px
+        background-color: #fff
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+        overflow: auto
+        &-title
+            font-size: 20px
             font-family: sans-serif
-            font-weight: 100
+            font-weight: 700
             color: #1e1e1e
-    &__name
-        display: inline-block
-        font-size: 12px
-        line-height: 12px
-        padding: 0
-        color: #757575
-    &__star
-        display: inline-block
-        font-size: 12px
-        line-height: 12px
-        padding: 0
-        color: #e04d27
-    &__input
-        display: block
-        height: 52px
-        width: 100%
-        border: 1px solid #ccc 
-        border-radius: 3px
-        font-size: 14px
-         
+            text-align: center
+            margin-bottom: 63px
+        &-body
+            margin-left: 80px
+        &-label
+            display: inline-block
+            color: #757575
+            font-size: 14px
+            font-family: sans-serif
+        &-star
+            display: inline-block
+            color: #e04d27
+        &-input
+            display: block
+            margin-top: 8px
+            width: 459px
+            height: 52px
+            font-size: 20px
+            border: 1px solid #ccc
+            border-radius: 3px
+            margin-bottom: 20px
+            &:last-child
+                margin-bottom: 0
+        &__btn 
+            margin-left: 80px
+            margin-top: 30px
+            width: 459px
+            height: 51px
+            background-color: #e04d27
+            color: #fff 
+            outline: none
+            border: none
+            cursor: pointer
+            margin-bottom: 15px
+        &-footer
+            text-align: center
+            margin-bottom: 30px
+        &-span 
+            display: inline-block
+            font-size: 14px
+            font-family: sans-serif
+            line-height: 32px
+            color: #8d8d8d
+        &-link 
+            display: inline-block
+            font-size: 14px
+            font-family: sans-serif
+            line-height: 32px
+            color: #e04d27
+        &-checkbox 
+            margin-top: 10px
+        &__checkbox 
+            margin-left: 80px
+            display: inline-block
+            vertical-align: middle
+            &-text 
+                display: inline-block
+                vertical-align: middle
+                font-size: 14px
+                line-height: 32px
+                font-family: sans-serif
+                color: #b8b8b8
+    &-login
+        margin-top: -110px
+    &-credit 
+        display: none
+        position: fixed
+        border-radius: 5px
+        z-index: 20
+        margin-top: 20px
+        margin-left: 25%
+        width: 819px
+        background-color: #fff
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+        overflow: auto
+        &-title, &-subtitle
+            font-size: 20px
+            font-family: sans-serif
+            text-align: center
+            color: #1e1e1e
+        &-subtitle
+            font-size: 16px
+            margin-bottom: 40px
+        &-label
+            display: inline-block
+            margin-left: 80px
+            font-size: 14px
+            font-family: sans-serif
+            color: #757575
+            margin-bottom: 8px
+        &-star
+            display: inline-block
+            color: #e04d27
+        &-input
+            display: block
+            margin-left: 80px
+            width: 659px
+            height: 52px
+            border: 1px solid #ccc 
+            border-radius: 3px
+            font-size: 20px
+            margin-bottom: 20px
+        &-btn 
+            margin-left: 80px
+            width: 195px
+            height: 51px
+            color: #fff 
+            background-color: #e04d27
+            border: none
+            outline: none
+            cursor: pointer
+            margin-bottom: 30px
         
+            
 
 
+
+.close-login, .close-sign, .close-credit
+    outline: none
+    border: none
+    background-color: #fff
+    margin-left: 561px
+    margin-top: 30px
+    font-size: 30px
+    font-weight: 100
+    margin-bottom: 3px
+    &:hover 
+        cursor: pointer
+.fade 
+    display: none
+    &:before
+        content: ''
+        width: 100%
+        height: 100%
+        left: 0
+        top: 0
+        position: fixed
+        background-color: rgba(0, 0, 0, 0.5)
+        z-index: 19

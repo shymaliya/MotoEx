@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="fade"></div>
+    <section class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-logo">
+                    <a href="index.html"><img src="img/logo.png" alt=""></a>
+                </div>
+                <div class="header-form">
+                    <div class="header-input">
+                        <input type="text" placeholder="Я шукаю ..." class="header-form__form">
+                    </div>
+                   <div class="header-form-img">
+                       <button class="header-form-img-btn"><img src="img/search-icon.png" alt="" class="header-form__img"></button>
+                   </div>
+                </div>
+                <div class="header-svg">
+                    <button class="header-svg-btn"><img src="img/cart-icon.svg" alt=""></button>
+                </div>
+                <div class="header-btn">
+                    <button class="header-btn-sign">Вхід</button>
+                    <button class="header-btn-login">Реєстрація</button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-sign">
+            <button class="close-sign">×</button>
+            <div class="modal-sign-content">
+                <div class="modal-sign-header">
+                    <h2 class="modal-sign-title">Sign In</h2>
+                </div>
+                <div class="modal-sign-body">
+                    <label for="modal-sign-input" class="modal-sign-label">Email</label>
+                    <p class="modal-sign-star">*</p>
+                    <input type="text" class="modal-sign-input">
+                    <label for="modal-sign-input" class="modal-sign-label">Пароль</label>
+                    <p class="modal-sign-star">*</p>
+                    <input type="text" class="modal-sign-input">
+                </div>
+                <div class="modal-sign-btn">
+                    <button class="modal-sign__btn">Sign In</button>
+                </div>
+                <div class="modal-sign-footer">
+                    <p class="modal-sign-span">Don't have account?</p>
+                    <a href="#" class="modal-sign-link">Sign Up</a>
+                </div>
+            </div>
+        </div>
+        <div class="modal-login">
+            <button class="close-login">×</button>
+            <div class="modal-login-content">
+                <div class="modal-login-header">
+                    <h2 class="modal-login-title">Sign Up</h2>
+                </div>
+                <div class="modal-login-body">
+                    <label for="modal-login-input" class="modal-login-label">Ім'я</label>
+                    <p class="modal-login-star">*</p>
+                    <input type="text" class="modal-login-input">
+                    <label for="modal-login-input" class="modal-login-label">Фамілія</label>
+                    <p class="modal-login-star">*</p>
+                    <input type="text" class="modal-login-input">
+                    <label for="modal-login-input" class="modal-login-label">Email</label>
+                    <p class="modal-login-star">*</p>
+                    <input type="text" class="modal-login-input">
+                    <label for="modal-login-input" class="modal-login-label">Пароль</label>
+                    <p class="modal-login-star">*</p>
+                    <input type="text" class="modal-login-input">
+                </div>
+                <div class="modal-login-checkbox">
+                    <input type="checkbox" class="modal-login__checkbox">
+                    <p class="modal-login__checkbox-text">I agree to</p>
+                </div>
+                <div class="modal-login-btn">
+                    <button class="modal-login__btn">Sign Up</button>
+                </div>
+                <div class="modal-login-footer">
+                    <p class="modal-login-span">Have account?</p>
+                    <a href="#" class="modal-login-link">Sign In</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="nav">
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-links">
+                <a href="#" class="navbar-links__items">
+                    <h3 class="navbar-links__items-agricultural">Сільськогосподарська техніка</h3>
+                </a>
+                <a href="#" class="navbar-links__items">
+                    <h3 class="navbar-links__items-motorcycle">Мототехніка</h3>
+                </a>
+                <a href="#" class="navbar-links__items">
+                    <h3 class="navbar-links__items-bicycle">Велосипеди</h3>
+                </a>
+                <a href="#" class="navbar-links__items">
+                    <h3 class="navbar-links__items-equipment">Додаткове обладнання</h3>
+                </a>
+                <a href="#" class="navbar-links__items">
+                    <h3 class="navbar-links__items-services">Послуги</h3>
+                </a>
+                <a href="about.html" class="navbar-links__items">
+                    <h3 class="navbar-links__items-about">Про нас</h3>
+                </a>
+                <a href="contacts.html" class="navbar-links__items">
+                    <h3 class="navbar-links__items-contacts">Контакти</h3>
+                </a>
+                <a href="#" class="navbar-links__items">
+                    <h3 class="navbar-links__items-advice">Поради</h3>
+                </a>
+            </div>
+            <div class="navbar-links-menu-agricultural">
+                <div class="navbar-links-menu__agricultural">
+                    <div class="navbar-links-menu-header">
+                        <h3 class="navbar-links-menu__title">Сільськогосподарська техніка</h3>
+                        <span class="navbar-links-menu__span">232 товари</span>
+                    </div>
+                    <div class="navbar-links-menu-line"></div>
+                    <div class="navbar-links-menu-items">
+                        <a href=""><p class="navbar-links-menu-items__item">Мототрактори</p></a>
+                        <a href=""><p class="navbar-links-menu-items__item">Трактори</p></a>
+                        <a href=""><p class="navbar-links-menu-items__item">Мотоблоки</p></a>
+                        <a href=""><p class="navbar-links-menu-items__item">Запчастини</p></a>
+                        <a href=""><p class="navbar-links-menu-items__item">Двигуни</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-links-menu-motorcycle">
+                <div class="navbar-links-menu__motorcycle">
+                    <div class="navbar-links-menu-header">
+                        <h3 class="navbar-links-menu__title">Мототехніка</h3>
+                        <span class="navbar-links-menu__span">232 товари</span>
+                    </div>
+                    <div class="navbar-links-menu-line"></div>
+                    <div class="navbar-links-menu-items">
+                        <a href=""><p class="navbar-links-menu-items__item">Мотоцикли</p></a>
+                        <a href=""><p class="navbar-links-menu-items__item">Скутера</p></a>
+                        <a href=""><p class="navbar-links-menu-items__item">Електроскутера</p></a>
+                        <a href=""><p class="navbar-links-menu-items__item">Квадроцикли</p></a>
+                        <a href=""><p class="navbar-links-menu-items__item">Запчастини</p></a>
+                        <a href=""><p class="navbar-links-menu-items__item">Аксесуари</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-links-menu-bicycle">
+                <div class="navbar-links-menu__bicycle">
+                    <div class="navbar-links-menu-header">
+                        <h3 class="navbar-links-menu__title">Велосипеди</h3>
+                    </div>
+                    <div class="navbar-links-menu-line"></div>
+                </div>
+            </div>
+            <div class="navbar-links-menu-equipment">
+                <div class="navbar-links-menu__equipment">
+                    <div class="navbar-links-menu-header">
+                        <h3 class="navbar-links-menu__title">Додаткове обладнання</h3>
+                        <span class="navbar-links-menu__span">232 товари</span>
+                    </div>
+                    <div class="navbar-links-menu-line"></div>
+                    <div class="navbar-links-menu-items">
+                        <a href=""><p class="navbar-links-menu-items__item">Навісне та причіпне обладнання</p></a>
+                        <a href=""><p class="navbar-links-menu-items__item navbar-links-menu-items__item-spare">Запчастини</p></a>
+                        <div class="navbar-links-menu-items-hide">
+                            <a href=""><p class="navbar-links-menu-items__item">Мотоблоки</p></a>
+                            <a href=""><p class="navbar-links-menu-items__item">Мототехніка</p></a>
+                            <a href=""><p class="navbar-links-menu-items__item">Трактори</p></a>
+                            <a href=""><p class="navbar-links-menu-items__item">Мототрактори</p></a>
+                            <a href=""><p class="navbar-links-menu-items__item">Двигуни</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="shopping">
+    <div class="container">
+        <div class="shopping-content">
+            <div class="shopping-links">
+                <a href=""><h2 class="shopping-links__link">Сільськогосподарська техніка</h2></a>
+                <p class="shopping-links__arrow">></p>
+                <a href=""><h2 class="shopping-links__link">Міні-трактори</h2></a>
+                <p class="shopping-links__arrow">></p>
+                <a href=""><h2 class="shopping-links__link">Magnum 380 Prestige Tractor</h2></a>
+            </div>
+            <div class="shopping-steps">
+                <div class="shopping-steps__one">1</div>
+                <div class="shopping-steps__two">2</div>
+                <div class="shopping-steps__three">3</div>
+                <div class="shopping-steps-line"></div>
+            </div>
+            <div class="shopping-first-page">
+                <h3 class="shopping-title">Shopping Bag</h3>
+                <div class="shopping-body">
+                    <div class="shopping-items">
+                        <p class="shopping-item">item</p>
+                        <div class="shopping-main">
+                            <p class="shopping-num">Кількість</p>
+                            <p class="shopping-price">Ціна</p>
+                        </div>
+                    </div>
+                    <div class="shopping-bag">
+                        <div class="shopping-machine">
+                            <img src="img/14905.png" alt="" class="shopping-machine-img">
+                            <h2 class="shopping-machine-name">Magnum 380 Prestige Tractor</h2>
+                        </div>
+                        <div class="shopping-info">
+                            <div class="shopping-info-num">2</div>
+                            <div class="shopping-info-price">$125,000</div>
+                        </div>
+                    </div>
+                    <div class="shopping-total-price">
+                        <div class="shopping-total-price-items">
+                            <h2 class="shopping-total-price__text">Total price:</h2>
+                            <p class="shopping-total-price__price">$125,000</p>
+                        </div>
+                    </div>
+                    <div class="shopping-btn">
+                        <div class="shopping-btn-item"><button class="shopping-btn__btn">Купити</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="shopping-second-page">
+                <h3 class="shopping-title">Оформити покупку</h3>
+                <div class="shopping-inputs">
+                    <div class="shopping-inputs-first-column">
+                        <label for="shopping-inputs-input" class="shopping-inputs-label">Ім'я</label>
+                        <input type="text" class="shopping-inputs-input">
+                        <label for="shopping-inputs-input" class="shopping-inputs-label">Телефон</label>
+                        <input type="text" class="shopping-inputs-input">
+                        <label for="shopping-inputs-input" class="shopping-inputs-label">Місто</label>
+                        <input type="text" class="shopping-inputs-input">
+                    </div>
+                    <div class="shopping-inputs-second-column">
+                        <label for="shopping-inputs-input" class="shopping-inputs-label">Фамілія</label>
+                        <input type="text" class="shopping-inputs-input">
+                        <label for="shopping-inputs-input" class="shopping-inputs-label">Область/район</label>
+                        <select class="shopping-inputs-input">
+                            <option value="">Вінницька</option>
+                            <option value="">Волинська</option>
+                            <option value="">Дніпровська</option>
+                            <option value="">Донецька</option>
+                            <option value="">Житомирська</option>
+                            <option value="">Закарпатська</option>
+                            <option value="">Запорізька</option>
+                            <option value="">Івано-Франківська</option>
+                            <option value="">Київська</option>
+                            <option value="">Кіровоградська</option>
+                            <option value="">Луганська</option>
+                            <option value="">Львівська</option>
+                            <option value="">Миколаївська</option>
+                            <option value="">Одеська</option>
+                            <option value="">Полтавська</option>
+                            <option value="">Рівненська</option>
+                            <option value="">Сумська</option>
+                            <option value="">Тернопільська</option>
+                            <option value="">Харківська</option>
+                            <option value="">Херсонська</option>
+                            <option value="">Хмельницька</option>
+                            <option value="">Черкаська</option>
+                            <option value="">Чернівецька</option>
+                            <option value="">Чернігівська</option>
+                        </select>
+                        <label for="shopping-inputs-input" class="shopping-inputs-label">Доставка</label>
+                        <select class="shopping-inputs-input">
+                            <option>Самовивіз</option>
+                            <option>Кур'єром</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="shopping-btn-section">
+                    <div class="shopping-second-page-btn">
+                        <div class="shopping-second-page-btn-item"><button class="shopping-second-page-btn__btn">Купити</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="shopping-third-page">
+                <h3 class="shopping-title">Оплатити</h3>
+                <div class="shopping-pay-cards">
+                    <button><div class="shopping-visa-card"><img src="img/cards/visa.png" alt=""></div></button>
+                    <button><div class="shopping-paypal-card"><img src="img/cards/paypal.png" alt=""></div></button>
+                </div>
+                <div class="shopping-third-page-inputs">
+                    <div class="shopping-third-page-inputs__name">
+                        <label for="shopping-inputs-input" class="shopping-inputs-label">Ім'я власника картки</label>
+                        <input type="text" class="shopping-inputs-input">
+                    </div>
+                    <div class="shopping-third-page-inputs__number">
+                        <label for="shopping-inputs-input" class="shopping-inputs-label">Номер картки</label>
+                        <input type="text" class="shopping-inputs-input">
+                    </div>
+                </div>
+                <div class="shopping-cards-data">
+                    <div class="shopping-cards-data-expire">
+                        <label for="shopping-cards-data-select" class="shopping-inputs-label">Expire date</label>
+                        <select class="shopping-cards-data-select">
+                            <option value="" disabled selected>MM</option>
+                            <option value="">Січень</option>
+                            <option value="">Лютий</option>
+                            <option value="">Березень</option>
+                            <option value="">Квітень</option>
+                            <option value="">Травень</option>
+                            <option value="">Червень</option>
+                            <option value="">Липень</option>
+                            <option value="">Серпень</option>
+                            <option value="">Вересень</option>
+                            <option value="">Жовтень</option>
+                            <option value="">Листопад</option>
+                            <option value="">Грудень</option>
+                        </select>
+                        <select class="shopping-cards-data-select">
+                            <option value="" disabled selected>YYYY</option>
+                            <option value="">2020</option>
+                            <option value="">2019</option>
+                            <option value="">2018</option>
+                            <option value="">2017</option>
+                            <option value="">2016</option>
+                            <option value="">2015</option>
+                            <option value="">2014</option>
+                            <option value="">2013</option>
+                            <option value="">2012</option>
+                        </select>
+                    </div>
+                    <div class="shopping-cards-data-cvv">
+                        <label for="shopping-cards-data-cvv__input" class="shopping-inputs-label">Cvv</label>
+                        <input type="text" class="shopping-cards-data-cvv__input">
+                    </div>
+                    <div class="shopping-cards-link">
+                        <a href=""><p class="shopping-cards-span">What's CVV?</p></a>
+                    </div>
+                </div>
+                <div class="shopping-btn-section">
+                    <div class="shopping-third-page-btn">
+                        <div class="shopping-third-page-btn-item"><button class="shopping-third-page-btn__btn">Купити</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-contacts">
+                <img src="img/logo.png" alt="logo" class="footer-contacts__logo">
+                <p class="footer-contacts__mail">info@motto.com</p>
+                <p class="footer-contacts__address">2150 BA Nieuw-Vennep</p>
+                <p class="footer-contacts__land">The Ukraine</p>
+                <p class="footer-contacts__tel">Tel: +31 252 662248</p>
+            </div>
+            <div class="footer-shop">
+                <h3 class="footer-shop-title">Магазин</h3>
+                <a href="#" class="footer-shop__link">Сільськогосподарська техніка</a>
+                <a href="#" class="footer-shop__link">Мототехніка</a>
+                <a href="#" class="footer-shop__link">Велосипеди</a>
+                <a href="#" class="footer-shop__link">Додаткове обладнання</a>
+            </div>
+            <div class="footer-services">
+                <h3 class="footer-services-title">Послуги</h3>
+                <a href="#" class="footer-services__link">Сервіс</a>
+                <a href="#" class="footer-services__link">Гарантія</a>
+                <a href="#" class="footer-services__link">Доставка</a>
+                <a href="#" class="footer-services__link">Кредит</a>
+            </div>
+            <div class="footer-social">
+                <h3 class="footer-social-title">Соцмережі</h3>
+                <div class="footer-social__items">
+                    <a href="#" class="footer-social__items-facebook">f</a>
+                    <a href="#" class="footer-social__items-twitter"><img src="img/social/twitter.png" alt="twitter"></a>
+                    <a href="#" class="footer-social__items-instagram"><img src="img/social/instagram.png" alt="instagram"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="sellar">
+    <div class="sellar-line"></div>
+    <div class="container">
+        <div class="sellar-content">
+            <p class="sellar-content__name">&#169 2019 Мотоекшен</p>
+            <p class="sellar-content__terms">Terms & Conditions</p>
+            <p class="sellar-content__privacy">Privacy</p>
+        </div>       
+    </div>
+</section>
+
+<script src="js/navbar.js"></script>
+<script src="js/header.js"></script>
+<script src="js/shoppingBag.js"></script>
+</body>
+</html>
